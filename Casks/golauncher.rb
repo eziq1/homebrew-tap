@@ -1,15 +1,15 @@
 # Created with scripts/release/brewcask (https://github.com/eziq1/golauncher).
 # The tap is eziq1/tap, github.com/eziq1/homebrew-tap.
 cask "golauncher" do
-  version "0.8.0"
+  version "0.9.0"
 
   on_arm do
-    sha256 "d1414c62f13c7085806d589f8675c8f8639547ee7cfd47cb96908fe5cc8be0f0"
+    sha256 "937dc5e4be4c7a95ee5d8d818ac7619c1ee5470b3ba08601858ccf5ad567358a"
 
     url "https://github.com/eziq1/golauncher/releases/download/v#{version}/golauncher_#{version}_darwin_arm64.zip"
   end
   on_intel do
-    sha256 "d8738ede7bdfdc6f206ed2c461a04b51adcd87da417983343c3b624de798da7a"
+    sha256 "5df4c47a5a66feabf68887f511cdbd178abd30c644bffdf477a49d208791b4ab"
 
     url "https://github.com/eziq1/golauncher/releases/download/v#{version}/golauncher_#{version}_darwin_amd64.zip"
   end
@@ -23,7 +23,7 @@ cask "golauncher" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "golauncher.app"
   binary "#{appdir}/golauncher.app/Contents/MacOS/glctl"
