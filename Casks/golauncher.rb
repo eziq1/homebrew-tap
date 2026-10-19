@@ -1,15 +1,15 @@
 # Created with scripts/release/brewcask (https://github.com/eziq1/golauncher).
 # The tap is eziq1/tap, github.com/eziq1/homebrew-tap.
 cask "golauncher" do
-  version "0.9.0"
+  version "0.10.0"
 
   on_arm do
-    sha256 "937dc5e4be4c7a95ee5d8d818ac7619c1ee5470b3ba08601858ccf5ad567358a"
+    sha256 "266c53d63188b1c27c58d3d83cbf450907bcb91fb5b87a2d2f166a63e37a359a"
 
     url "https://github.com/eziq1/golauncher/releases/download/v#{version}/golauncher_#{version}_darwin_arm64.zip"
   end
   on_intel do
-    sha256 "5df4c47a5a66feabf68887f511cdbd178abd30c644bffdf477a49d208791b4ab"
+    sha256 "0f55f05564f52304703bd88612fe6e4757e91d09334e73f851da8bc34c195cde"
 
     url "https://github.com/eziq1/golauncher/releases/download/v#{version}/golauncher_#{version}_darwin_amd64.zip"
   end
